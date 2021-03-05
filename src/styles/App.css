@@ -1,3 +1,25 @@
+.containerApp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/lotr-concept-art.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;    
+}
+
+p{
+    color: #fff;
+    max-width: 600px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 20px;
+}
 .lotrGif{
     display: flex;
     align-items: center;

@@ -17,15 +17,15 @@ export default function App() {
 
     setTimeout(() => {
       loadAllBooks();
-    }, 2000);
+    }, 1000);
     
     // setTimeout(loadAllBooks(), 5000);
 
   }, []);
 
   return (
-    <div>
-      <p>Hello LOTR</p>
+    <div className="containerApp">
+    
       <p>{bookList}</p>
 
       {bookList.length <= 0 &&
@@ -33,7 +33,6 @@ export default function App() {
           <img src="https://media.giphy.com/media/MpzeCDjDDovVAXF0cI/source.gif" alt="lotr gif" />
         </div>
       }
-
 
     </div>
   );

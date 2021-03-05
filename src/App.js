@@ -5,28 +5,45 @@ import { useEffect, useState } from 'react';
 export default function App() {
 
   const [bookList, setBookList] = useState([]);
+  // const [charactorsList, setCharactorsList] = useState([]);
+
 
   useEffect(() => {    
     const loadAllBooks = async () => {
       let list = await LotrAPI.getAllBooks();
-      let listatexto = JSON.stringify(list);
-      console.log(list.docs[1]);          
-      setBookList(listatexto);
-      // setTimeout(setBookList(listatexto), 5000);
+      let bookName = JSON.stringify(list.docs[1].name);
+      let bookNameStr = bookName.replace(/['"]+/g, '')
+      console.log(list); 
+      setBookList(bookNameStr);
     }    
-
     setTimeout(() => {
       loadAllBooks();
-    }, 1000);
-    
-    // setTimeout(loadAllBooks(), 5000);
-
+    }, 1000); 
   }, []);
+
+  // useEffect(() => {    
+  //   const loadAllCharactors = async () => {
+  //     let list = await LotrAPI.getAllCharactors();
+  //     let charactors = JSON.stringify(list);
+    
+  //     console.log(charactors); 
+  //     setCharactorsList(charactors);
+  //   }    
+  //   setTimeout(() => {
+  //     loadAllCharactors();
+  //   }, 1000); 
+  // }, []);
 
   return (
     <div className="containerApp">
     
-      <p>{bookList}</p>
+      <p>Livros:</p>     
+      
+      <p>{bookList}</p>       
+
+      {/* <p>Personagens:</p>     
+      
+      <p>{charactorsList}</p>       */}
 
       {bookList.length <= 0 &&
         <div className="lotrGif">

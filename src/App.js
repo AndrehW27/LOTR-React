@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import LotrAPI from './LotrAPI'
+import { useEffect, useState } from 'react';
 
-function App() {
+export default function App() {
+
+  const [bookList, setBookList] = useState([]);
+
+  useEffect(() => {    
+    const loadAllBooks = async () => {
+      let list = await LotrAPI.getAllBooks();
+      let listatexto = JSON.stringify(list);
+      console.log(list.docs[1]);          
+      setBookList(listatexto);
+      // setTimeout(setBookList(listatexto), 5000);
+    }    
+
+    setTimeout(() => {
+      loadAllBooks();
+    }, 2000);
+    
+    // setTimeout(loadAllBooks(), 5000);
+
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>Hello LOTR</p>
+      <p>{bookList}</p>
+
+      {bookList.length <= 0 &&
+        <div className="lotrGif">
+          <img src="https://media.giphy.com/media/MpzeCDjDDovVAXF0cI/source.gif" alt="lotr gif" />
+        </div>
+      }
+
+
     </div>
   );
 }
 
-export default App;
+

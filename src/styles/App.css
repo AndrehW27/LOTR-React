@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 .containerApp{
     display: flex;
     flex-direction: column;
@@ -18,8 +24,8 @@ p{
     color: #fff;
     max-width: 600px;
     background-color: rgba(0,0,0,0.5);
-    padding: 20px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 10px;
 }
 .lotrGif{
     display: flex;
@@ -37,3 +43,4 @@ p{
 .lotrGif  img{
     width: 200px;
 }
+

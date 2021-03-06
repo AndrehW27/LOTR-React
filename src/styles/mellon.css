@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../images/durinsDoor.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gandalfOuter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 20px 20px 0px 0px;
+   
+    box-shadow: 0px 0px 40px 20px #000;
+}
+
+.gandalfQuestion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 350px;
+    background-color: rgba(66, 66, 66, 0.6);
+    border-radius: 20px 20px 0px 0px;
+
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.gandalfQuestion h1 {
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.gandalfPhoto {
+    background-image: url('../images/youShallNotPass.gif');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 250px;
+    border-radius: 0px 0px 20px 20px;
+
+
+}
+
+.gandalfQuestion button {
+    margin-top: 30px;
+}
+
+button {
+    background-color: transparent;
+    padding: 6px 24px;
+    margin: 0 12px;
+    border-radius: 8px;
+    color: rgb(81, 193, 228);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* .wrongAnswer{
+    border-radius: 8px;
+    padding: 6px 24px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 94, 94, 0.8);
+} */
+
+/* .wrongAnswerClass{
+    background-color: rgba(255, 94, 94, 0.8);
+} */

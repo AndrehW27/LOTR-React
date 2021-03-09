@@ -1,6 +1,7 @@
-*{
+* {
     box-sizing: border-box !important;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -24,7 +25,6 @@
     width: 600px;
     height: 600px;
     border-radius: 20px 20px 20px 20px;
-   
     box-shadow: 0px 0px 70px 20px rgba(171, 215, 250, 0.30);
 }
 
@@ -37,7 +37,6 @@
     height: 350px;
     background-color: rgba(66, 66, 66, 0.6);
     border-radius: 20px 20px 0px 0px;
-
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -56,8 +55,6 @@
     width: 600px;
     height: 250px;
     border-radius: 0px 0px 20px 20px;
-
-
 }
 
 .gandalfQuestion button {
@@ -72,22 +69,21 @@ button {
     color: rgb(81, 193, 228);
     font-weight: bold;
     font-size: 20px;
-    cursor: pointer;    
+    cursor: pointer;
     transition: ease-in-out 200ms;
 }
 
-button:hover{
+button:hover {
     background-color: rgba(66, 66, 66, 0.7);
-    
 }
 
-.right{    
-    position: absolute;   
+.right {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     visibility: hidden;
-    position: absolute; 
+    position: absolute;
     background-image: url('../images/gandalf.jpg');
     background-position: 70% 30%;
     background-repeat: no-repeat;
@@ -95,41 +91,36 @@ button:hover{
     width: 600px;
     height: 250px;
     text-align: center;
-    transform: translateY(175px);  
-    z-index: 100; 
+    transform: translateY(175px);
+    z-index: 100;
     box-sizing: border-box;
-   
+    border-radius: 0px 0px 20px 20px;
+
 }
 
-.right p{
-
+.right p {
     font-size: 60px;
     color: rgb(255, 255, 255);
     /* background: transparent; */
-    
     padding: 10px 20px;
     transition: ease-in-out 200ms;
-    cursor: pointer;
     box-sizing: border-box !important;
-    
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 20px 20px 0;
 }
 
-.right p:hover{
-    opacity: 0.9;
-}
-
-.green{
+.green {
     background-color: rgb(17, 92, 23) !important;
     color: #fff;
 }
 
-.wrong1{    
-    position: absolute;   
+.wrong1 {
+    position: absolute;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     visibility: hidden;
-    position: absolute; 
+    position: absolute;
     background-image: url('../images/smeagol.jpg');
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -137,27 +128,35 @@ button:hover{
     width: 600px;
     height: 250px;
     text-align: center;
-    transform: translateY(175px);  
-    z-index: 100; 
+    transform: translateY(175px);
+    border-radius: 0px 0px 20px 20px;
+
+  
 }
 
-.wrong1 p{
-    position: absolute; 
+.wrong1 p {
+    position: absolute;
     font-size: 60px;
-    color: crimson;
+    color: #fff;
     /* background: transparent; */
     right: 20px;
-    padding: 0 20px;
+    padding: 10px 20px;
     bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
 }
 
-.wrong2{    
-    position: absolute;   
+.wrong1 p:first-child{
+    background: transparent;
+}
+
+.wrong2 {
+    position: absolute;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     visibility: hidden;
-    position: absolute; 
+    position: absolute;
     background-image: url('../images/twoStatues.jpg');
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -165,31 +164,39 @@ button:hover{
     width: 600px;
     height: 250px;
     text-align: center;
-    transform: translateY(175px);   
+    transform: translateY(175px);
+    border-radius: 0px 0px 20px 20px;
+
 }
 
-.wrong2 p{
-    position: absolute; 
+.wrong2 p {
+    position: absolute;
     font-size: 60px;
-    color: crimson;
+    color: #fff;
     /* background: transparent; */
-    right: 20px;
-    padding: 0 20px;
+    left: 20px;
+    padding: 10px 20px;
     bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
 }
 
+.wrong2 p:first-child{
+    background: transparent;
+    
+}
 
-.show{
-    position: absolute; 
+.show {
+    position: absolute;
     visibility: visible;
 }
 
-.red{
-    background-color: rgb(95, 15, 31) !important; 
+.red {
+    background-color: rgb(95, 15, 31) !important;
     color: #fff;
 }
 
-.x{
+.x {
     position: absolute;
     top: 0px;
     right: 20px;
@@ -197,9 +204,10 @@ button:hover{
     padding: 0;
     background: transparent;
     cursor: pointer;
-    font-size: 12px;    
+    font-size: 12px;
 }
-.xRight{
+
+.xRight {
     position: absolute;
     top: 0px;
     right: 20px;
@@ -207,32 +215,52 @@ button:hover{
     padding: 0;
     background: transparent;
     cursor: pointer;
-    font-size: 12px;    
+    font-size: 12px;
 }
-.x2{
+
+.x2 {
     position: absolute;
+    width: 40px;
+    height: 40px;
     top: 0px;
-    right: 10px;
+    left: 10px;
     margin: 0;
     padding: 0px;
     background: transparent;
     cursor: pointer;
-    font-size: 12px;    
-}
-
-.setaBemvindoOuter{
-    position: absolute; 
-    right: 20px;    
-    bottom: 10px;
-    display: flex;
+    font-size: 12px;
     
 }
 
-.seta  {
-    background-image: url('../images/twoStatues.jpg');
+.setaBemvindoOuter {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    display: flex;
+}
+
+.setaBemvindoOuter:hover {
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.setaBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60px;
+    height: 100px;
+    border-radius: 20px 0 0 20px;
+}
+
+.seta {
+    position: absolute;
+    background-image: url('../images/seta-direita.png');
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100px;
-    height:100px;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
 }

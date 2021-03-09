@@ -20,13 +20,7 @@
     bottom: 0;    
 }
 
-p{
-    color: #fff;
-    max-width: 600px;
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px;
-    border-radius: 10px;
-}
+
 .lotrGif{
     display: flex;
     align-items: center;

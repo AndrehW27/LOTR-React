@@ -53,15 +53,17 @@ export default function Mellon() {
                 <div className="container">
 
                     <div id="right" className="right">
-                        <div className="setaBemvindoOuter">
-                            <div className="seta"></div>
-
-                            <p onClick={() => {
+                        <div className="setaBemvindoOuter"
+                            onClick={() => {
                                 setTimeout(() => {
                                     setIsMellonPicked(true);
                                 }, 1000);
-                            }}>Bem-vindo
-                            </p>
+                            }}                      
+                        >
+                            <div className="setaBox">
+                                <div className="seta"></div>
+                            </div>
+                            <p>Bem-vindo</p>
                         </div>
                     </div>
 

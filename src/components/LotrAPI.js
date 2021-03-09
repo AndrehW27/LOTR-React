@@ -28,6 +28,10 @@ export default {
 
 // export default {
 //     getAllCharactors: async () => {
+
+//     const myHeaders = new Headers();  
+//     myHeaders.append('Authorization', 'Bearer jb6Y_Y0cOZ9J6dUm6P7y');
+
 //         return (
 //             basicFetch('/character')
 //         );

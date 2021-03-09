@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box !important;
+}
 .container {
     display: flex;
     align-items: center;
@@ -20,9 +23,9 @@
     justify-content: center;
     width: 600px;
     height: 600px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 20px 20px;
    
-    box-shadow: 0px 0px 40px 20px #000;
+    box-shadow: 0px 0px 70px 20px rgba(171, 215, 250, 0.30);
 }
 
 .gandalfQuestion {
@@ -69,17 +72,167 @@ button {
     color: rgb(81, 193, 228);
     font-weight: bold;
     font-size: 20px;
-    cursor: pointer;
+    cursor: pointer;    
+    transition: ease-in-out 200ms;
 }
 
-/* .wrongAnswer{
-    border-radius: 8px;
-    padding: 6px 24px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 94, 94, 0.8);
-} */
+button:hover{
+    background-color: rgba(66, 66, 66, 0.7);
+    
+}
 
-/* .wrongAnswerClass{
-    background-color: rgba(255, 94, 94, 0.8);
-} */
+.right{    
+    position: absolute;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    position: absolute; 
+    background-image: url('../images/gandalf.jpg');
+    background-position: 70% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 250px;
+    text-align: center;
+    transform: translateY(175px);  
+    z-index: 100; 
+    box-sizing: border-box;
+   
+}
+
+.right p{
+
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    /* background: transparent; */
+    
+    padding: 10px 20px;
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+    box-sizing: border-box !important;
+    
+}
+
+.right p:hover{
+    opacity: 0.9;
+}
+
+.green{
+    background-color: rgb(17, 92, 23) !important;
+    color: #fff;
+}
+
+.wrong1{    
+    position: absolute;   
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    visibility: hidden;
+    position: absolute; 
+    background-image: url('../images/smeagol.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 250px;
+    text-align: center;
+    transform: translateY(175px);  
+    z-index: 100; 
+}
+
+.wrong1 p{
+    position: absolute; 
+    font-size: 60px;
+    color: crimson;
+    /* background: transparent; */
+    right: 20px;
+    padding: 0 20px;
+    bottom: 10px;
+}
+
+.wrong2{    
+    position: absolute;   
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    visibility: hidden;
+    position: absolute; 
+    background-image: url('../images/twoStatues.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 250px;
+    text-align: center;
+    transform: translateY(175px);   
+}
+
+.wrong2 p{
+    position: absolute; 
+    font-size: 60px;
+    color: crimson;
+    /* background: transparent; */
+    right: 20px;
+    padding: 0 20px;
+    bottom: 20px;
+}
+
+
+.show{
+    position: absolute; 
+    visibility: visible;
+}
+
+.red{
+    background-color: rgb(95, 15, 31) !important; 
+    color: #fff;
+}
+
+.x{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 12px;    
+}
+.xRight{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 12px;    
+}
+.x2{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    margin: 0;
+    padding: 0px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 12px;    
+}
+
+.setaBemvindoOuter{
+    position: absolute; 
+    right: 20px;    
+    bottom: 10px;
+    display: flex;
+    
+}
+
+.seta  {
+    background-image: url('../images/twoStatues.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height:100px;
+}

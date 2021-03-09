@@ -28,32 +28,52 @@ export default function BookList() {
         }, 0);
     }, []);
 
-    return (
-        
+    const buttonLike = document.getElementById('buttonLike');
+    const heart = document.getElementById('heart');
 
-            <div className="bookOuter">
-                <p>Livro 1:</p>
-                <p>{bookList[0]}</p>
-                <button onClick={() =>
+    if (heart) {
+        buttonLike.addEventListener('click', () => {
+            heart.classList.remove('like')
+            heart.classList.add('heartFilled')
+        })
+    }
+    // const heart = document.getElementById('heart');
+    // heart.addEventListener('change', ()=> {
+    // heart.classList.toggle('heartFilled')    
+    // })
+
+    return (
+
+
+        <div className="bookOuter">
+            <p>Livro 1:</p>
+            <p>{bookList[0]}</p>
+
+            <div className="buttonCounteLikeOuter">
+                <button id="buttonLike" onClick={() =>
                     setCounterBook1(counterBook1 + 1)
                 }>Like</button>
-                <p>{counterBook1}</p>
+                <p className="counter">
+                    {counterBook1}
+                </p>
+                <div id="heart" className="like"></div>
+            </div>
 
-                <p>Livro 2:</p>
-                <p>{bookList[1]}</p>
-                <button onClick={() =>
-                    setCounterBook2(counterBook2 + 1)
-                }>Like</button>
-                <p>{counterBook2}</p>
+            <p>Livro 2:</p>
+            <p>{bookList[1]}</p>
+            <button onClick={() =>
+                setCounterBook2(counterBook2 + 1)
+            }>Like</button>
+            <p>{counterBook2}</p>
 
-                <p>Livro 3:</p>
-                <p>{bookList[2]}</p>
-                <button onClick={() =>
-                    setCounterBook3(counterBook3 + 1)
-                }>Like</button>
-                <p>{counterBook3}</p>       
+            <p>Livro 3:</p>
+            <p>{bookList[2]}</p>
+            <button onClick={() =>
+                setCounterBook3(counterBook3 + 1)
+            }>Like</button>
+            <p>{counterBook3}</p>
 
-            </div>        
+        </div>
     );
 }
 

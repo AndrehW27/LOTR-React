@@ -1,0 +1,42 @@
+.bookOuter{
+    background-color: rgb(83, 83, 83);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.bookOuter p{
+    color: #fff;
+}
+
+.buttonCounteLikeOuter{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like{
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/heart.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 10px;
+
+}
+.counter{
+    padding: 0 10px;
+}
+
+.heartFilled{
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/heartFilled.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 10px;
+    transition: ease-in-out 500ms;
+
+}

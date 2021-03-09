@@ -237,12 +237,18 @@ button:hover {
     right: 20px;
     bottom: 10px;
     display: flex;
+    border-radius: 20px;
+    transition: ease-in-out 200ms;
 }
 
 .setaBemvindoOuter:hover {
     box-sizing: border-box;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(110, 110, 110, 0.7);
+    color: rgb(81, 193, 228);
+}
+.setaBemvindoOuter:hover > p{
+    color: rgb(81, 193, 228);
 }
 
 .setaBox {
@@ -264,3 +270,7 @@ button:hover {
     width: 40px;
     height: 40px;
 }
+
+/* .setaBemvindoOuter:hover > .setaBox.seta{
+    background-image: url('../images/seta-direita-azul.png');
+} */

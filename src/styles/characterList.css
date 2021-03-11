@@ -1,0 +1,7 @@
+.characterOuter{
+    width: 50vw;
+    height: 100vh;
+    overflow: scroll;
+    background-color: blue;
+    color: #fff;
+}

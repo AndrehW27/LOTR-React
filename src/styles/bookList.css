@@ -23,7 +23,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 10px;
-
+    transition: ease-in-out 500ms;
 }
 .counter{
     padding: 0 10px;

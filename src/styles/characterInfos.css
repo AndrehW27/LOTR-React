@@ -1,11 +1,3 @@
-.characterOuter{
-    width: 50vw;
-    height: 100vh;
-    overflow: scroll;
-    background-color: blue;
-    color: #fff;
-}
-
 .ContainerChar{
     display: flex;
     align-items: center;

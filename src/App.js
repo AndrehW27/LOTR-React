@@ -3,8 +3,7 @@ import LotrAPI from './components/LotrAPI'
 import Mellon from './components/Mellon';
 import BookList from './components/BookList';
 import CharacterList from './components/CharacterList';
-
-
+import CharacterInfos from './components/CharacterInfos';
 
 import { useEffect, useState } from 'react';
 
@@ -37,10 +36,10 @@ export default function App() {
   return (
     <div className="containerApp">
 
-      {/* <Mellon /> */}
-      
+      <Mellon />      
       <BookList />
       <CharacterList />
+      {/* <CharacterInfos /> */}
     {bookList.length <= 0 &&
         <div className="lotrGif">
           <img src="https://media.giphy.com/media/MpzeCDjDDovVAXF0cI/source.gif" alt="lotr gif" />

@@ -1,17 +1,13 @@
-.ContainerChar{
+.containerQuotes{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 500px;
-    height: 80px;
+    min-height: 200px;
     background-color: #fff;
     border-radius: 20px;
     border: 1px solid blue; 
-}
-.ContainerChar div{
-    color: blue;
-}
-
-.ContainerChar div p{
-    color: grey;    
+    box-sizing: border-box;
+    padding: 20px;
 }

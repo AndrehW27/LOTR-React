@@ -3,9 +3,10 @@ import LotrAPI from './components/LotrAPI'
 import Mellon from './components/Mellon';
 import BookList from './components/BookList';
 import CharacterList from './components/CharacterList';
-import CharacterInfos from './components/CharacterInfos';
+import Quotes from './components/Quotes';
 
 import { useEffect, useState } from 'react';
+import MovieList from './components/MovieList';
 
 export default function App() {
 
@@ -16,7 +17,7 @@ export default function App() {
     const loadAllData = async () => {
       let list = await LotrAPI.getAllData();
       // console.log(list);
-      console.log(list[1].items);
+      // console.log(list[1].items);
       let books = []
       for (let i = 0; i < list[0].items.docs.length; i++) {
         books.push(list[0].items.docs[i].name);
@@ -36,11 +37,17 @@ export default function App() {
   return (
     <div className="containerApp">
 
-      <Mellon />      
-      <BookList />
+      {/* <Mellon /> */}
+
+      <Quotes />  
+      <div className="bookMovie">
+      <BookList /> 
+      <MovieList />
+      </div>    
+    
       <CharacterList />
-      {/* <CharacterInfos /> */}
-    {bookList.length <= 0 &&
+     
+      {bookList.length <= 0 &&
         <div className="lotrGif">
           <img src="https://media.giphy.com/media/MpzeCDjDDovVAXF0cI/source.gif" alt="lotr gif" />
         </div>

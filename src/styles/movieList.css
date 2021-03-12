@@ -1,0 +1,10 @@
+.movieOuter{
+    background-color: rgb(83, 83, 83);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.movieOuter p{
+    color: #fff;
+}
+

@@ -1,4 +1,3 @@
-
 import LotrAPI from './LotrAPI'
 import '../styles/characterList.css'
 import { useEffect, useState } from 'react';
@@ -17,29 +16,25 @@ export default function CharacterList() {
       let charactersNames = []
       for (let i = 0; i < list[1].items.docs.length; i++) {        
         charactersNames.push(list[1].items.docs[i].name);
-      }
-      console.log(charactersNames[0]);
+      }     
       setCharacterNameList(charactersNames);
 
       let charactersRaces = []
       for (let i = 0; i < list[1].items.docs.length; i++) {     
         charactersRaces.push(list[1].items.docs[i].race);
       }
-      console.log(charactersRaces[0]);
       setCharacterRaceList(charactersRaces);   
       
       let charactersAges = []
       for (let i = 0; i < list[1].items.docs.length; i++) {     
         charactersAges.push(list[1].items.docs[i].birth);
       }
-      console.log(charactersAges[0]);
       setCharacterAgeList(charactersAges); 
 
       let charactersWiki = []
       for (let i = 0; i < list[1].items.docs.length; i++) {     
         charactersWiki.push(list[1].items.docs[i].wikiUrl);
       }
-      console.log(charactersWiki[0]);
       setCharacterWikiList(charactersWiki); 
 
       // let bookName = JSON.stringify(list.docs[0].name);

@@ -29,6 +29,16 @@ export default {
                 slug: 'personagens',
                 items: await basicFetch('/character')
             }
+            ,
+            {
+                slug: 'citações',
+                items: await basicFetch('/quote')
+            }
+            ,
+            {
+                slug: 'filmes',
+                items: await basicFetch('/movie')
+            }
         ]
     }
 }
